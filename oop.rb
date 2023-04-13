@@ -94,26 +94,27 @@ class Hobbit
     end
 
     def celebrate_birthday
-        p @age.next
+        @age += 1
+        p @age
+        if @age == 33
+            @is_adult = true
+        elsif @age == 101
+            @is_old = true
+        end
     end
 
-    def is_old
-
-    end
-
-    def has_ring
-
-    end
 end    
 
 
-pippin = Hobbit.new("Pippin","cool dude", 33)
+pippin = Hobbit.new("Pippin","cool dude", 32)
 
 tom = Hobbit.new("Tom","cool dude", 120)
 
 frode = Hobbit.new("Frodo","cool dude", 20)
+p pippin
 
 p pippin.celebrate_birthday
+p pippin
 
 p tom
 
