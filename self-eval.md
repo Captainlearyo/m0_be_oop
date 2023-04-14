@@ -5,4 +5,4 @@ pretty good
 - How is your workflow going, in terms of taking breaks, staying focused, etc.?
 im so very sick. im dying
 - What did you learn from this exercise that you want to remember as you begin Mod 1?
-ternarys
+ternarys are one of my favorite tools so it was nice to practice with those
