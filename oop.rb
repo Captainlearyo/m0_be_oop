@@ -87,14 +87,14 @@ drake.eat
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
 
 class Hobbit
-    attr_reader :nmae, :dynamic_dispodition, :age, :is_adult, :is_old, :has_ring
-    def initialize(name, dynamic_dispodition, age = 0)
+    attr_reader :name, :dynamic_dispodition, :age, :is_adult, :is_old, :has_ring
+    def initialize(name, dynamic_dispodition)
         @name = name
         @dynamic_dispodition = dynamic_dispodition
-        @age = age
-        @is_adult = (age >= 33 ? true : false)
-        @is_old = (age >= 101 ? true : false)
-        @has_ring = (name == "Frodo" ? true : false)
+        @age = 0
+        @is_adult = false
+        @is_old = false
+        @has_ring = name == "Frodo" 
     end
 
     def celebrate_birthday
